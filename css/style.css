@@ -213,14 +213,24 @@ footer ul {
 #projects{
   padding:4rem 1rem;
 }
+#experience{
+    padding: 4rem 1rem;
+}
 
 #projects h2{
   font-size:2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
 }
+#experience h2{
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem*1.5);
+}
 
 #projects h3{
   color:var(--aqua);
+}
+#experience h3{
+    color: var(--aqua);
 }
 
 #projects h4{
@@ -228,17 +238,25 @@ footer ul {
   font-family:var(--mono);
   margin:0;
 }
+#experience h4{
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
 
 .blackbox{
   background-color:var(--black);
-  padding:1rem;
+  padding:1rem !important; 
   border-radius:10px;
   color:var(--white);
-  font-size:1rem;
+  font-size:1rem !important;
   line-height:1.5;
 }
+.blackbox p{
+    padding-bottom: 0px;
+}
 
-#projects ul{
+#projects ul,#experience ul{
   list-style:none;
   padding:0;
   margin:0;
@@ -249,12 +267,17 @@ footer ul {
   font-size:1rem;
 }
 
-#projects img{
+#projects img,#experience img{
   margin:2rem 0 4rem 0;
   border-left:1px solid var(--aqua);
   border-top:1px solid var(--aqua);
   border-radius:25px;
   padding:1rem;
+}
+#experience p{
+    font-size: 18px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
 }
 @media (min-width:550px){
   article{
@@ -262,7 +285,7 @@ footer ul {
     grid-template-columns:repeat(10, 1fr);
     gap:1rem;
   }
-  #projects img{
+  #projects img,#experience img{
     grid-column:1/6;
     grid-row:1/2;
   }
@@ -272,18 +295,10 @@ footer ul {
     order:2;
     text-align:right;
   }
-  #projects ul{
+  #projects ul,#experience ul{
     justify-content:flex-end;
   }
 }
-
-
-
-
-
-
-
-
 @media (min-width: 850px) {
     nav {
         max-width: 1200px;
