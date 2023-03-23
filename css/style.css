@@ -216,12 +216,19 @@ footer ul {
 #experience{
     padding: 4rem 1rem;
 }
+#certification{
+    padding: 4rem 1rem;
+}
 
 #projects h2{
   font-size:2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
 }
 #experience h2{
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem*1.5);
+}
+#certification h2{
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem*1.5);
 }
@@ -232,6 +239,9 @@ footer ul {
 #experience h3{
     color: var(--aqua);
 }
+#certification h3{
+    color: var(--aqua);
+}
 
 #projects h4{
   font-size:1rem;
@@ -239,6 +249,11 @@ footer ul {
   margin:0;
 }
 #experience h4{
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
+#certification h4{
     font-size: 1rem;
     font-family: var(--mono);
     margin: 0;
@@ -256,7 +271,7 @@ footer ul {
     padding-bottom: 0px;
 }
 
-#projects ul,#experience ul{
+#projects ul,#experience ul,#certification ul{
   list-style:none;
   padding:0;
   margin:0;
@@ -267,7 +282,7 @@ footer ul {
   font-size:1rem;
 }
 
-#projects img,#experience img{
+#projects img,#experience img,#certification img{
   margin:2rem 0 4rem 0;
   border-left:1px solid var(--aqua);
   border-top:1px solid var(--aqua);
@@ -285,7 +300,7 @@ footer ul {
     grid-template-columns:repeat(10, 1fr);
     gap:1rem;
   }
-  #projects img,#experience img{
+  #projects img,#experience img,#certification img{
     grid-column:1/6;
     grid-row:1/2;
   }
@@ -295,7 +310,7 @@ footer ul {
     order:2;
     text-align:right;
   }
-  #projects ul,#experience ul{
+  #projects ul,#experience ul,#certification ul{
     justify-content:flex-end;
   }
 }
